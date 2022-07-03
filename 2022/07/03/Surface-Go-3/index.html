@@ -14,15 +14,15 @@
 <li>苏菲狗 3 出厂自带正版 Windows 11 家庭版。去年刚出的时候玩了一阵子，不就是换皮 Windows 10 嘛，还要搞一堆配置才能适应，于是乎准备装回 Windows 10。</li>
 <li>特别说明下，我重装的版本原本是 1909，但这个版本竟然没有合适的驱动……后面还是升级了 Win 10 的版本。驱动官网地址是：<a target="_blank" rel="noopener" href="https://www.microsoft.com/en-us/download/details.aspx?id=103504">Download Surface Go 3 Drivers and Firmware from Official Microsoft Download Center</a>，Win 10 指向的是：<code>Win10_19042_22.023.33209.0</code>。</li>
 <li>开机时按住【电源键】和【音量下键】，启动到 BIOS 页面，哦对了，默认的加密记得关掉，然后 BIOS 一通设置，从 USB 启动程序，就可以重装系统了，解锁 BIOS 之后开机上面会有巨丑的红条然后一个开锁标志。</li>
-<li>重装过程中，给 Linux 系统预留 20G 左右的空间就可以了。</li>
+<li>重装过程中，记得给 Linux 系统预留 20G 左右的空间，如果要挂交换分区的话再加个 8G、10G 的。</li>
 </ul>
 </li>
 <li>安装 Linux<ul>
 <li>Linux 采用的是 Ubuntu 22.04。</li>
 <li>正常流程，安装时候选其他安装方式。</li>
-<li>找到 Windows 那块 SSD，看到之前留出的空间，新建一个 200M 的分区，把 EFI 挂上去，剩下的空间可以都拿去挂 <code>/</code> 也可留 8G 给交换分区，然后留下的再挂 <code>/</code>，记住这里系统(<code>/</code>)一定也要挂载在 Windows 下。</li>
+<li>找到 Windows 那块 SSD，看到之前留出的空间，新建一个 200M 的分区，把 EFI 挂上去，剩下的空间可以都拿去挂 <code>/</code> 也可留 8G 给交换分区，然后留下的再挂 <code>/</code>，记住这里系统(<code>/</code>)一定也要挂载在 SSD 下。</li>
 <li>home 目录挂载在 TF 卡上，启动选择 Linux 的 EFI 所在分区即可。</li>
-<li>正常安装，done。</li>
+<li>正常安装，over。</li>
 </ul>
 </li>
 </ul>
